@@ -44,7 +44,7 @@ router.get("/Buscador/:id", ProductosGetID);
 router.post("/", validarJWT, rolesPermitidos("Admin", "User", "Client"), ProductosPostU);
 router.post("/", validarJWTClient, rolesPermitidos("Client"), ProductosPostU);
 router.post("/mov", validarJWT, rolesPermitidos("Admin", "User","Client"), ProductosPost);
-router.post("/new", validarJWTClient, rolesPermitidos("Admin", "User","Client"), ProductosPost);
+router.post("/new", ProductosPost);
 router.put("/", validarJWT, rolesPermitidos("Admin", "User", "Client"), ProductosPut);
 router.put("/mov/:id", ProductosPutU);
 

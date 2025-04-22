@@ -12,7 +12,7 @@ class Server{
             usuarios: '/api/users',
             auth: '/api/auth',
         }
-
+        
         // Middelwares
         this.middlewares();
         // Rutas

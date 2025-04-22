@@ -5,7 +5,7 @@ const config = {
   server: "SearchBD.mssql.somee.com",
     options: {
       encrypt: true, // for azure
-      trustServerCertificate: true, // change to true for local dev / self-signed certs
+      trustServerCertificate: true,
     },
   };
   
